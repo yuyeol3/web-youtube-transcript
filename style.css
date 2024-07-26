@@ -1,0 +1,21 @@
+body {
+  overflow-y: hidden;
+}
+
+#content {
+  margin: 2% auto;
+  padding: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.title.is-2 {
+  text-align: center;
+}
+
+#txtarea-script {
+  width: 100%;
+  height: 90%;
+  border-radius: 2px;
+}

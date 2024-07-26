@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Youtube Transcript</title>
+    <link rel="stylesheet" href="./bulma.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="content" class="container">
+      <!-- <button class="modal-close is-large" aria-label="setting"></button>-->
+
+      <button id="activate-modal" class="button is-small">
+        ⚙️
+      </button>
+
+      <h1 class="title is-2">Youtube Transcript</h1>
+      <div class="modal" id="setting-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="field is-grouped">
+            <div class="control is-expanded">
+              <input id="input-apikey" class="input" type="text" placeholder="Your API key">
+            </div>
+            <div class="control">
+              <button id="btn-saveapi" class="button is-dark">Save</button>
+            </div>
+          </div>
+        </div>
+        <button id="modal-close" class="modal-close is-large" aria-label="close"></button>
+      </div>
+
+      <h1 class="title is-3">URL</h1>
+      <div class="block">
+        <div class="field is-grouped">
+          <div class="control is-expanded">
+            <input id="input-URL" class="input" type="text" placeholder="URL input">
+          </div>
+          <div class="control">
+            <button id="btn-submit" class="button is-dark">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="field is-grouped">
+        <h1 class="title is-3">Results</h1>
+        <div class="control">
+          <button id="btn-copy" class="button is-dark">Copy</button>
+          <button id="btn-summary" class="button is-dark">Summary</button>
+        </div>
+      </div>
+      <div class="block">
+        <div class="control" id="txtarea-control">
+          <textarea
+            id="txtarea-script"
+            class="textarea has-fixed-size"
+            placeholder="Transcript will apppear here"
+            rows="10"
+            readonly
+          ></textarea>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
